@@ -2,10 +2,11 @@
 
 [![NinjaTrader 8](https://img.shields.io/badge/Platform-NinjaTrader%208-black.svg)](https://ninjatrader.com)
 [![License: Personal Use](https://img.shields.io/badge/License-Personal%20Use-6E6E6E.svg)](#license)
+[![Support: Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
 [![YouTube Guide](https://img.shields.io/badge/YouTube-Watch%20Walkthrough-red.svg)](https://youtube.com/@icPriceAction)
 [![Website](https://img.shields.io/badge/Website-icpriceaction.com-111213.svg)](https://icpriceaction.com)
 
-A specialized Indicator engineered for Price Action day trading. It draws a delta profile for each session or anchored time window, with buying pressure to the right of a central axis and selling pressure to the left at every price, plus lines at the prices where buyers and sellers were most aggressive.
+A specialized Indicator engineered for Price Action and Order Flow trading. It draws a delta profile for each session or anchored time window, with buying pressure to the right of a central axis and selling pressure to the left at every price, plus lines at the prices where buyers and sellers were most aggressive.
 
 ---
 
@@ -19,13 +20,31 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ---
 
+## ☕ Support the Project
+
+All tools by **icPriceAction** are **100% free and open-source for personal trading use**. There are no paywalls, subscriptions, or locked features and there never will be!
+
+Developing, optimizing for zero latency on multiple charts/instruments, and maintaining documentation and releases takes a **considerable amount of personal time and ongoing effort**. 
+
+If this tool saves you screen time, improves your execution, or cleans up your charts, buying a coffee is the best way to support continued development:
+
+<p align="left">
+  <a href="https://buymeacoffee.com/icpriceaction" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="190">
+  </a>
+</p>
+
+> **[☕ Support Development on Buy Me a Coffee](https://buymeacoffee.com/icpriceaction)**
+
+---
+
 ## ⚡ Key Features
 
 - **Diverging Delta Profile:** Net delta (buy volume minus sell volume) at every price, drawn from a central zero axis. Trades are classified by aggressor using bid/ask, with a tick-rule fallback, from the indicator's own 1-tick data series. No Tick Replay needed.
 - **Delta Extreme Levels:** Lines at each profile's largest positive and largest negative delta, optionally extended to the right edge of the chart or through the next session. A summary label shows net delta, delta %, cumulative delta high/low and total volume.
 - **Session or Anchored Profiles:** One profile per trading session, or per daily time window (e.g. 09:30–16:00 New York) in any time zone, with daylight saving handled automatically. The developing profile sits just right of the current bar so it stays next to price.
-- **PATS & Context Aligned:** Designed for Price Action principles (Mack / Thomas Wade) and disciplined futures execution.
-- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency 2000-tick ES/MES charts.
+- **PATS & Context Aligned:** Designed for Price Action principles and disciplined futures execution.
+- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency tick charts.
 - **Clean Visuals:** Complementary default palette that preserves candlestick clarity without chart clutter.
 - **Fully Customizable:** Configure colors, row sizing, widths, levels and text via the native NT8 settings panel.
 
@@ -44,7 +63,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 ## 📥 Installation Guide
 
 1. Head to the **[Releases](https://github.com/icPriceAction/delta-profile/releases)** tab of this repository.
-2. Download the latest release `.zip` file (`icPriceAction_icPADeltaProfile_v2.0.1.zip`).
+2. Download the latest release `.zip` file.
    - *Note: Do NOT extract or unzip the file.*
 3. Open **NinjaTrader 8**.
 4. In the Control Center, navigate to:

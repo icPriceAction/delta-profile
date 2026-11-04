@@ -9,6 +9,7 @@
 // Website:      https://icpriceaction.com
 // Repository:   https://github.com/icPriceAction/delta-profile
 // YouTube:      https://youtube.com/@icPriceAction
+// Support:      https://buymeacoffee.com/icpriceaction
 //
 // License:      Free for personal trading use. Commercial resale, redistribution,
 //               or repackaging is strictly prohibited. See LICENSE in official repository.
@@ -317,8 +318,9 @@ namespace NinjaTrader.NinjaScript.Indicators.icPA
             if (State == State.SetDefaults)
             {
                 Description              = "Delta profile per session or anchored window: diverging buy/sell delta at every price, with lines at the largest positive and negative delta. "
-                                         + "Builds its own 1-tick series, so Tick Replay is not required; bid/ask classification needs historical tick data with bid/ask from your data provider. "
-                                         + "Runs with Calculate = On each tick. v" + VersionString + ". Developed by Istvan Cebrian | icPriceAction.com";
+                                         + "Builds its own 1-tick series, so Tick Replay is not required; bid/ask classification needs historical tick data with bid/ask from your data provider.\r\n"
+                                         + "Developed by Istvan Cebrian | https://icpriceaction.com\r"
+					                     + "Support this free tool: https://buymeacoffee.com/icpriceaction";
                 Name                     = "icPA - Delta Profile";
                 Calculate                = Calculate.OnEachTick;
                 IsOverlay                = true;
